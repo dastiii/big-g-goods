@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <header class="py-6 border-b-8 border-red-500">
+    <header class="py-6 bg-white border-b-8 border-red-500">
       <div class="max-w-7xl px-2 mx-auto flex items-center justify-between">
         <img src="@/assets/logo.png" class="h-20" alt="Big G Goods">
         <nav>
@@ -44,7 +44,7 @@
         </div>
         <div class="w-1/3">
           <div class="px-4">
-            <img src="https://pic.statev.de/i/GwbBJ.png" class="w-64 mx-auto" alt="Weihnachtsverlosung">
+            <img src="https://pic.statev.de/i/KQt66.jpg" class="w-64 mx-auto" alt="Weihnachtsverlosung">
           </div>
         </div>
       </div>
