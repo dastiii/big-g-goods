@@ -7,11 +7,16 @@
           <ul class="flex space-x-4">
             <li>
               <a href="#"
-                 class="uppercase border-b-4 border-transparent px-1 py-2
+                 class="uppercase text-red-500 border-red-500 border-b-4 border-transparent px-1 py-2
                  hover:border-gray-500"
               >Angebot</a>
             </li>
-            <li></li>
+            <li>
+              <a href="#"
+                 class="uppercase border-b-4 border-transparent px-1 py-2
+                 hover:border-gray-500"
+              >Kontakt</a>
+            </li>
             <li></li>
           </ul>
         </nav>
@@ -22,7 +27,7 @@
       <div class="py-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="lg:text-center">
-            <h2 class="text-base font-semibold tracking-wide uppercase text-red-500">Big G Goods - General Store Merchant</h2>
+            <h2 class="text-base font-semibold tracking-wide uppercase text-red-500">Big G Goods - General Store Merchants</h2>
             <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
               Dein Gemischtwaren- und Sonderpostenhändler
             </p>
