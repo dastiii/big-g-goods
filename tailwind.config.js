@@ -15,7 +15,7 @@ module.exports = {
       },
 
       colors: {
-        brand: "#e2b007",
+        brand: "#C7553C",
       },
       rotate: {
         "10": "10deg",
