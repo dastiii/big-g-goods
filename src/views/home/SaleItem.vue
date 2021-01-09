@@ -13,9 +13,9 @@
     </td>
     <td class="px-4 py-2 whitespace-nowrap text-right font-medium">
       <div class="flex items-center w-full justify-end space-x-4">
-        <div class="relative">
+        <div v-if="item.price" class="relative">
           <div class="text-gray-100 font-serif text-lg" v-text="price"></div>
-          <div class="absolute h-1 w-14 bg-red-500 py-1 top-3 transform -rotate-12 opacity-50"></div>
+          <div class="absolute h-1 w-full bg-red-500 py-1 top-3 transform -rotate-12 opacity-50"></div>
         </div>
         <span class="text-white font-serif font-medium text-lg" v-text="salePrice"></span>
       </div>
