@@ -16,12 +16,12 @@
                     class="bg-white divide-y divide-gray-200"
                   >
                   <tr v-if="!filteredItems.length && !isLoading" key="no-items">
-                    <td class="px-6 py-4 whitespace-nowrap text-gray-500">
+                    <td class="px-6 py-4 whitespace-nowrap text-gray-500" colspan="2">
                       Aktuell können wir dir keine Produkte anbieten, komm' einfach später wieder vorbei.
                     </td>
                   </tr>
                   <tr v-if="isLoading" key="items-loading">
-                    <td class="px-6 py-4 whitespace-nowrap text-gray-500">
+                    <td class="px-6 py-4 whitespace-nowrap text-gray-500" colspan="2">
                       Produkte werden geladen, einen Augenblick bitte.
                     </td>
                   </tr>
