@@ -76,11 +76,7 @@ export default {
 
   methods: {
     async fetchData() {
-      const url = process.env.NODE_ENV === "production"
-        ? "https://my-json-server.typicode.com/dastiii/big-goods-api/db"
-        : "https://api.big-goods.test/v1/stock";
-
-      return await this.$http.get(url);
+      return await this.$http.get(`v1/stock`);
     },
 
     updateData(res) {
