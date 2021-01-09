@@ -3,35 +3,8 @@
     <div class="w-2/3">
       <div class="space-y-8">
         <!-- This example requires Tailwind CSS v2.0+ -->
-        <div class="flex flex-col space-y-4">
-          <h2 class="text-2xl">Unser Sortiment</h2>
-
-          <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
-            <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
-              <div class="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
-                <table class="min-w-full divide-y divide-gray-200">
-                  <transition-group
-                    name="list"
-                    tag="tbody"
-                    class="bg-white divide-y divide-gray-200"
-                  >
-                  <tr v-if="!filteredItems.length && !isLoading" key="no-items">
-                    <td class="px-6 py-4 whitespace-nowrap text-gray-500" colspan="2">
-                      Aktuell können wir dir keine Produkte anbieten, komm' einfach später wieder vorbei.
-                    </td>
-                  </tr>
-                  <tr v-if="isLoading" key="items-loading">
-                    <td class="px-6 py-4 whitespace-nowrap text-gray-500" colspan="2">
-                      Produkte werden geladen, einen Augenblick bitte.
-                    </td>
-                  </tr>
-                  <assortment-item v-for="item in filteredItems" :item="item" :key="item.hash"></assortment-item>
-                  </transition-group>
-                </table>
-              </div>
-            </div>
-          </div>
-        </div>
+        <sale-items :items="saleItems" :isLoading="isLoading"></sale-items>
+        <assortment-items :items="filteredItems" :isLoading="isLoading"></assortment-items>
       </div>
     </div>
     <div class="w-1/3">
@@ -57,15 +30,16 @@
 </template>
 
 <script>
-// @ is an alias to /src
-
-import AssortmentItem from '@/views/home/AssortmentItem';
 import Tag from '@/views/home/Tag';
+import SaleItems from '@/views/home/SaleItems';
+import AssortmentItems from '@/views/home/AssortmentItems';
+
 export default {
   name: 'Home',
   components: {
-    Tag,
-    AssortmentItem
+    AssortmentItems,
+    SaleItems,
+    Tag
   },
   data() {
     return {
@@ -78,8 +52,14 @@ export default {
   },
 
   computed: {
+    saleItems() {
+      return this.items.filter(item => item.salePrice);
+    },
+
     filteredItems() {
       let items = this.items;
+
+      items = this.items.filter(item => !item.salePrice);
 
       if (this.search) {
         items = items.filter(item => {

@@ -1,6 +1,6 @@
 <template>
   <div id="app" class="min-h-screen">
-    <header class="py-6 bg-white border-b-8 border-brand shadow">
+    <header class="py-6 border-b-8 border-brand shadow">
       <div class="max-w-7xl px-2 mx-auto flex items-center justify-between">
         <img src="@/assets/logo.png" class="h-20" alt="Big G Goods">
         <div class="text-right flex items-center space-x-4">
