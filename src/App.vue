@@ -18,17 +18,12 @@
     <main class="space-y-8">
       <hero></hero>
 
-      <div class="max-w-7xl px-2 mx-auto flex">
-        <div class="w-3/4">
-          <router-view/>
-        </div>
-        <div class="w-1/4">
-          <div class="space-y-8">
-            <img src="https://pic.statev.de/i/KQt66.jpg" class="w-64 mx-auto" alt="Weihnachtsverlosung">
-          </div>
-        </div>
+      <div>
+        <router-view></router-view>
       </div>
     </main>
+
+    <footer class="h-12"></footer>
   </div>
 </template>
 

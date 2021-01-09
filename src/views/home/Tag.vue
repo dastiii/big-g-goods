@@ -1,6 +1,6 @@
 <template>
   <span @click="toggle"
-    class="cursor-pointer inline-flex rounded-full items-center py-0.5 px-2.5 text-sm font-medium select-none shadow"
+    class="mx-1 my-1 cursor-pointer inline-flex rounded-full items-center py-0.5 px-2.5 text-sm font-medium select-none shadow"
     :class="{
       'bg-brand text-red-100': selected,
       'bg-gray-200 text-gray-700': !selected
