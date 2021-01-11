@@ -1,5 +1,5 @@
 <template>
-  <div class="relative bg-gray-800 overflow-hidden border-b-8 border-brand">
+  <div class="relative bg-gray-800 overflow-hidden border-b-4 border-brand">
     <div class="max-w-7xl mx-auto">
       <div class="relative z-10 bg-gray-800 lg:max-w-2xl lg:w-full">
         <svg class="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-gray-800 transform translate-x-1/2" fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">

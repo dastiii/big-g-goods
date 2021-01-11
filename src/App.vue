@@ -1,6 +1,6 @@
 <template>
-  <div id="app" class="min-h-screen">
-    <header class="py-6 border-b-8 border-brand shadow">
+  <div id="app" class="min-h-screen flex flex-col">
+    <header class="py-6 border-b-4 border-brand shadow">
       <div class="max-w-7xl px-2 mx-auto flex items-center justify-between">
         <img src="@/assets/logo.png" class="h-20" alt="Big G Goods">
         <div class="text-right flex items-center space-x-4">
@@ -15,7 +15,7 @@
       </div>
     </header>
 
-    <main class="space-y-8">
+    <main class="space-y-8 flex-1">
       <hero></hero>
 
       <div>
@@ -23,7 +23,16 @@
       </div>
     </main>
 
-    <footer class="h-12"></footer>
+    <footer class="py-6 bg-gray-800 border-t-4 border-brand">
+      <div class="max-w-7xl px-2 mx-auto flex justify-between items-end">
+        <div class="flex-1 flex flex-col text-gray-200">
+          <span>&copy; <span v-text="new Date().getFullYear()"></span> - BIG G GOODS - General Store Merchants, Chupacabra Street 88, SA9001 Los Santos</span>
+        </div>
+        <div class="px-4">
+          <img src="@/assets/statevVerified.png" class="h-16" alt="StateV Verified Website">
+        </div>
+      </div>
+    </footer>
   </div>
 </template>
 

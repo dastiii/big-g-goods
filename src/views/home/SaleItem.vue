@@ -1,5 +1,5 @@
 <template>
-  <tr class="hover:bg-gray-800">
+  <tr class="hover:bg-gray-700">
     <td class="px-4 py-2 whitespace-nowrap">
       <div class="flex items-center">
         <div class="flex-shrink-0 h-10 w-10">

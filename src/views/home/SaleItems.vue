@@ -7,9 +7,9 @@
         <div class="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
           <table class="min-w-full divide-y divide-gray-200">
             <transition-group
-                name="list"
-                tag="tbody"
-                class="bg-gradient-to-br from-gray-700 to-gray-900 divide-y divide-gray-800"
+              name="list"
+              tag="tbody"
+              class="bg-gradient-to-br from-gray-600 to-gray-800 divide-y divide-gray-800"
             >
               <tr v-if="!items.length && !isLoading" :key="'no-items-found'">
                 <td class="px-6 py-4 whitespace-nowrap text-gray-300" colspan="2">
