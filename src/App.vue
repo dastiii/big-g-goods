@@ -23,7 +23,7 @@
       </div>
     </main>
 
-    <footer class="py-6 bg-gray-800 border-t-4 border-brand">
+    <footer class="mt-4 py-6 bg-gray-800 border-t-4 border-brand">
       <div class="max-w-7xl px-2 mx-auto flex justify-between items-end">
         <div class="flex-1 flex flex-col text-gray-200">
           <span>&copy; <span v-text="new Date().getFullYear()"></span> - BIG G GOODS - General Store Merchants, Chupacabra Street 88, SA9001 Los Santos</span>
