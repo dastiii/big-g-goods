@@ -28,6 +28,14 @@
             <tag v-for="tag in tags" :key="tag" :name="tag" @added="addTag" @removed="removeTag"></tag>
           </div>
         </div>
+        <div class="px-8 space-y-3">
+          <h3 class="text-sm text-gray-700 uppercase">Letzte Bestandsaktualisierung</h3>
+          <span
+            class="mx-1 my-1 cursor-pointer inline-flex rounded-full items-center py-0.5
+            px-2.5 text-sm font-medium select-none shadow bg-gray-200 text-gray-700"
+            v-text="lastUpdate"
+          ></span>
+        </div>
       </div>
     </div>
   </div>
@@ -50,6 +58,7 @@ export default {
       isLoading: false,
       items: [],
       tags: [],
+      lastUpdate: 'nie',
       activeTags: [],
       search: null,
     }
@@ -95,6 +104,7 @@ export default {
     updateData(res) {
       this.items = res.data.items;
       this.tags = res.data.tags;
+      this.lastUpdate = res.data.lastUpdate;
       this.isLoading = false;
     },
 
