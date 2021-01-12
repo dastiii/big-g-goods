@@ -3,7 +3,7 @@
     <header class="py-6 border-b-4 border-brand shadow">
       <div class="max-w-7xl px-2 mx-auto flex items-center space-y-4 md:space-y-0 justify-center md:justify-between flex-wrap md:flex-no-wrap">
         <img src="@/assets/logo.png" class="h-20" alt="Big G Goods">
-        <div class="text-center md:text-right flex flex-col md:flex-row items-center md:space-x-4">
+        <div class="text-center md:text-right flex flex-col md:flex-row w-full md:w-auto items-center md:space-x-4">
           <div class="order-2 md:order-none">
             <p class="font-serif text-brand font-medium text-xl">1822-94444266</p>
             <p class="text-gray-500">Interesse an unseren Produkten?</p>
