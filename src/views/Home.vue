@@ -1,13 +1,13 @@
 <template>
-  <div class="max-w-7xl px-2 mx-auto flex">
-    <div class="w-2/3">
+  <div class="max-w-7xl px-2 mx-auto flex flex-wrap lg:flex-no-wrap">
+    <div class="w-full order-2 lg:w-2/3 lg:order-none">
       <div class="space-y-8">
         <!-- This example requires Tailwind CSS v2.0+ -->
         <sale-items :items="saleItems" :isLoading="isLoading"></sale-items>
         <assortment-items :items="filteredItems" :isLoading="isLoading"></assortment-items>
       </div>
     </div>
-    <div class="w-1/3">
+    <div class="w-full order-1 mb-8 lg:w-1/3 lg:order-none lg:mb-0">
       <div class="sticky top-4 space-y-8">
         <div class="px-8 space-y-3">
           <h3 class="text-sm text-gray-700 uppercase">Suche</h3>
